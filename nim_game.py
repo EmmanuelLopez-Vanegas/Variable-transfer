@@ -1,3 +1,4 @@
+# Comments will be explaining my problem
 import pygame
 import random
 import time
@@ -18,9 +19,19 @@ def win(name, name1, name2):
     else:
         print(name, 'wins!')
 
+# I want the name variable in the function below to be accessible throughout the file
+# I attempted win(name), but the problem is that it will redirect me to that function
+# All i want is for the variable to be accessible in other fucntions without having to go to them directly
 def nameVScpu():
     name = (input('What is your name? ')) 
     print('You will now be matched against a bot')
+    # The lines I have attempted are lsited below
+    """
+    Attempts:
+    - win(name) {this redirects me to the function}
+    - return name {Louis told me to but also did not seem to work}
+    - global name {Micheal told me to try it but it shows error everytime}
+    """
     
 def nameFOR2():
     name1 = (input('What is the name of player 1? '))
